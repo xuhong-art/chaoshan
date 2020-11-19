@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.p-1{
+    padding: 10px;
+}
+
+.container{
+    overflow: hidden;
+    overflow-y: scroll;
+    position: relative;
+    transition: 1s;
+    z-index: 2;
+}
+
+
+
+#imgBox {
+    height: 100vh;
+    width: 100vw;
+    /* overflow: hidden; */
+    z-index: -1;
+    position: relative;
+    /* position: absolute; */
+}
+
+.img {
+    transition: .5s;
+    width: 100%;
+}
+
+.click-img {
+    cursor: pointer;
+}
+
+.block {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    /* background-color: blue; */
+    /* border: 1px solid blue; */
+
+}
+
+.sceneBtn{
+
+    transition: 1s;
+    z-index: 3;
+    position: absolute;
+    padding: 30px;
+    span{
+        padding: 20px 40px;
+        background-color: rgb(250, 247, 219);
+        border-radius: 30px;
+    }
+}
+
+
+
+.block:hover {
+    cursor: pointer;
+}
+
+#scene1 {
+    left: 20vw;
+    bottom: -10px;
+}
+
+#scene2 {
+    left: 20vw;
+    top: 10vw;
+}
+
+#scene3 {
+    right: 25vw;
+    top: 15vw;
+}
+
+#intro1 {
+    transition: 1s;
+    right: 3vw;
+    top: 3vw;
+    /* right: 0; */
+    /* bottom: 0; */
+}
+
+#intro2{
+    top: 5vh;
+    left: 10vw;
+}
+
+#intro3{
+    right: 5vw;
+    bottom: 10vw;
+}
+
+#intro4{
+    right: 10vw;
+    top: 20vh;
+}
+
+.introBlock {
+    position: absolute;
+
+    height: 70vh;
+    width: 400px;
+    background-image: url('./images/textBg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+    color: darkblue;
+    font-style: italic;
+    line-height: 30px;
+
+}
+
+.spacer{
+    width: 200px;
+    height: 200px;
+}
+
+.introBlock .content {
+    padding: 70px;
+    padding-top: 10px;
+}
+
+#logoImg {
+    width: 200px;
+}
+
+.cloud {
+    transition: 1s;
+    position: absolute;
+    z-index: 3;
+    /* filter: drop-shadow(rgba(19, 15, 77, 0.105) 100px 100px 5px); */
+}
+
+#cloud1 {
+    right: -10vw;
+    width: 400px;
+    
+}
+
+
+
+#cloud2 {
+    left: -20vw;
+    bottom: 0;
+    height: 400px;
+}
+ 
+#cloud3 {
+    right: -15vw;
+    top: -20vh;
+
+    height: 400px;
+}
+
+.cloudBox{
+    animation: cloudAni 5s infinite alternate;
+}
+
+@keyframes cloudAni{
+    0%{transform: translateY(-100px); translateX(300px);}
+    100%{transform: translateY(100px); translateX(-300px);}
+}
+
+.sceneBox{
+    width: 100vw;
+    top: 0;
+    position: absolute;
+    display: none;
+}
+
+.block span{
+    padding: 10px 40px;
+    background-color: rgb(240, 236, 187);
+    border-radius: 20px;
+}
+
+
+
+
+.sceneImg{
+    width: 100%;
+}
+
+#scene2Box{
+    
+}

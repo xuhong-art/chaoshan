@@ -1,0 +1,123 @@
+<html>
+
+<head>
+	<title>未命名作品 4</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<style>
+		#scene2 {
+			width: 100vw;
+		}
+	</style>
+	<script>
+		let [w, h] = [window.innerWidth, window.innerHeight]
+		let isActive = false
+		window.onload = () => {
+			document.querySelectorAll('#scene2').forEach((img) => {
+				img.addEventListener("click", (e) => {
+					isActive = !isActive
+					// console.log(e);
+					document.querySelector('#scene2').style.transition = '1s'
+					if (isActive) {
+						document.querySelector('#scene2').style.transform = `scale(3) translateX(${moveToCenter(e, 'w')}px)  translateY(${moveToCenter(e, 'h')}px)`
+					} else {
+						document.querySelector('#scene2').style.transform = ''
+					}
+				})
+			})
+
+			window.addEventListener("mousemove", (e) => {
+				// document.querySelector('#imgBox').style.transition = 'none'
+				// if(isActive) document.querySelector('#imgBox').style.transform = `scale(7) translateX(${moveToCenter(e,'w')}px)  translateY(${moveToCenter(e,'h')}px)`
+			})
+		}
+
+		function moveToCenter(e, axis) {
+
+			let dir = 1
+			if (axis == 'w') {
+				if (e.clientX > w / 2) dir = -1
+				return Math.abs(e.clientX - w / 2) * dir
+
+			} else {
+				if (e.clientY > h / 2) dir = -1
+				return Math.abs(e.clientY - h / 2) * dir
+			}
+
+
+		}
+	</script>
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+	<!-- Save for Web Slices (未命名作品 4.psd) -->
+	<table id="scene2" width="1921" height="1440" border="0" cellpadding="0" cellspacing="0">
+		<tr>
+			<td colspan="7">
+				<img src="images/scene2_01.png" width="1920" height="218" alt=""></td>
+			<td>
+				<img src="images/&#x5206;&#x9694;&#x7b26;.gif" width="1" height="218" alt=""></td>
+		</tr>
+		<tr>
+			<td colspan="5">
+				<img src="images/scene2_02.png" width="1055" height="67" alt=""></td>
+			<td rowspan="2">
+				<img src="images/scene2_03.png" width="363" height="339" alt=""></td>
+			<td rowspan="5">
+				<img src="images/scene2_04.png" width="502" height="1221" alt=""></td>
+			<td>
+				<img src="images/&#x5206;&#x9694;&#x7b26;.gif" width="1" height="67" alt=""></td>
+		</tr>
+		<tr>
+			<td colspan="2" rowspan="3">
+				<img src="images/scene2_05.png" width="416" height="770" alt=""></td>
+			<td colspan="2" rowspan="2">
+				<img src="images/scene2_06.png" width="372" height="369" alt=""></td>
+			<td rowspan="4">
+				<img src="images/scene2_07.png" width="267" height="1154" alt=""></td>
+			<td>
+				<img src="images/&#x5206;&#x9694;&#x7b26;.gif" width="1" height="272" alt=""></td>
+		</tr>
+		<tr>
+			<td rowspan="3">
+				<img src="images/scene2_08.png" width="363" height="882" alt=""></td>
+			<td>
+				<img src="images/&#x5206;&#x9694;&#x7b26;.gif" width="1" height="97" alt=""></td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<img src="images/scene2_09.png" width="372" height="401" alt=""></td>
+			<td>
+				<img src="images/&#x5206;&#x9694;&#x7b26;.gif" width="1" height="401" alt=""></td>
+		</tr>
+		<tr>
+			<td>
+				<img src="images/scene2_10.png" width="346" height="384" alt=""></td>
+			<td colspan="2">
+				<img src="images/scene2_11.png" width="398" height="384" alt=""></td>
+			<td>
+				<img src="images/scene2_12.png" width="44" height="384" alt=""></td>
+			<td>
+				<img src="images/&#x5206;&#x9694;&#x7b26;.gif" width="1" height="384" alt=""></td>
+		</tr>
+		<tr>
+			<td>
+				<img src="images/&#x5206;&#x9694;&#x7b26;.gif" width="346" height="1" alt=""></td>
+			<td>
+				<img src="images/&#x5206;&#x9694;&#x7b26;.gif" width="70" height="1" alt=""></td>
+			<td>
+				<img src="images/&#x5206;&#x9694;&#x7b26;.gif" width="328" height="1" alt=""></td>
+			<td>
+				<img src="images/&#x5206;&#x9694;&#x7b26;.gif" width="44" height="1" alt=""></td>
+			<td>
+				<img src="images/&#x5206;&#x9694;&#x7b26;.gif" width="267" height="1" alt=""></td>
+			<td>
+				<img src="images/&#x5206;&#x9694;&#x7b26;.gif" width="363" height="1" alt=""></td>
+			<td>
+				<img src="images/&#x5206;&#x9694;&#x7b26;.gif" width="502" height="1" alt=""></td>
+			<td></td>
+		</tr>
+	</table>
+	<!-- End Save for Web Slices -->
+</body>
+
+</html>
